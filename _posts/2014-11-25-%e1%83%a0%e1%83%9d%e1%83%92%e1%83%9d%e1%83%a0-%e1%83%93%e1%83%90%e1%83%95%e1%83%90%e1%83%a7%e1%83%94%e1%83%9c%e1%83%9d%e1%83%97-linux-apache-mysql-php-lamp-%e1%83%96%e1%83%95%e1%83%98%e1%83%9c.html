@@ -1,0 +1,60 @@
+---
+layout: post
+status: publish
+published: true
+title: როგორ დავაყენოთ Linux, Apache, MySQL, PHP (LAMP) "ზვინი" Ubuntu-ზე
+author:
+  display_name: ShavidzeT
+  login: ShavidzeT
+  email: ShavidzeT@Gmail.com
+  url: ''
+author_login: ShavidzeT
+author_email: ShavidzeT@Gmail.com
+excerpt: "<strong style=\"text-decoration: underline;\">შესავალი:<&#47;strong>\r\nახალბედა
+  დეველოპერებს ალბათ გაგჩენიათ სურვილი მამა-პაპურ Windows-ზე ცოტა ხნით თავის დანებება
+  და უფრო მეტის გაგება, სხვა ვიზუალით, ან სიმძლავრით გამორჩეულ ოპერაციულ სისტემებზე.
+  ხოლო როდესაც ეცნობი ახალ ოპ. სისტემას, შენი მომდევნო ფიქრი ისაა, რომ შეიქმნა იგივე
+  პროგრამული გარემო, ოღონდ ახლა უკვე ახალ სისტემაზე."
+wordpress_id: 17
+wordpress_url: http://104.131.14.102/?p=17
+date: '2014-11-25 20:49:07 +0400'
+date_gmt: '2014-11-25 20:49:07 +0400'
+categories:
+- Uncategorized
+tags:
+- LAMP
+- Linux
+- Apache
+- MySQL
+- PHP
+- Ubuntu
+comments: []
+---
+<p><strong style="text-decoration: underline;">შესავალი:<&#47;strong><br />
+ახალბედა დეველოპერებს ალბათ გაგჩენიათ სურვილი მამა-პაპურ Windows-ზე ცოტა ხნით თავის დანებება და უფრო მეტის გაგება, სხვა ვიზუალით, ან სიმძლავრით გამორჩეულ ოპერაციულ სისტემებზე. ხოლო როდესაც ეცნობი ახალ ოპ. სისტემას, შენი მომდევნო ფიქრი ისაა, რომ შეიქმნა იგივე პროგრამული გარემო, ოღონდ ახლა უკვე ახალ სისტემაზე.<a id="more"></a><a id="more-17"></a> ამ მონდომების ასრულება დროსა და ნერვებს საკმარისად მოითხოვს (პირადი გამოცდილება), სწორედ ამიტომ ერთ-ერთ ასეთ მაგალითს მინდა შევეხო ამ სტატიაში და კონკრეტულად დამწყებ ვებ-დეველოპერებს მინდა გავუადვილო საქმე Ubuntu-ს დაყენების შემდეგ.</p>
+<p><strong style="text-decoration: underline;">LAMP-ის შესახებ:<&#47;strong><br />
+LAMP არის ეგრედწოდებული აბრევიატურა(შემოკლებული სიტყვა), ახალი რამის სწავლისას ან მუშაობისას არ მიყვარს რაიმეს მიფუჩეჩება, სწორედ ამიტომ ვცდილობ დეტალურად აგიხსნათ თითოეული ტერმინის არსიც...<br />
+მოკლედ, Lamp შედგება ოთხი კომპონენტისგან: Linux, Apache, MySQL და PHP. თუ დააკვირდებით ჩამოთვილილი კომპონენტის საწყისი ასო არის აღებული აბრევიატურის შესაქმნელად.<br />
+Linux = <strong>L<&#47;strong><br />
+Apache = <strong>A<&#47;strong><br />
+MySQL = <strong>M<&#47;strong><br />
+PHP = <strong>P<&#47;strong></p>
+<p><strong style="text-decoration: underline; text-align: centers; display: blocks;">ინსტალაცია<&#47;strong><br />
+<span style="text-align: centers; display: blocks;">გახსენით ტერმინალი(alt+Shift+Tab) და გაუშვით განახლების ბრძანება<br />
+<code>sudo apt-get update<&#47;code><br />
+რათა თავიდან ავიცილოთ სისტემის დაშავება<br />
+ახლა კი, ინსტრუქციას მიყევით ნაბიჯ-ნაბიჯ...<&#47;span></p>
+<p><strong style="text-decoration: underline;">პირველი ნაბიჯი - Apache-ს ინსტალაცია:<&#47;strong><br />
+<code>sudo apt-get install apache2<&#47;code><br />
+ბრძანების გაშვებისა და წარმატების შემთხვევაში თქვენს მოწყობილობაზე დაყენებულია Apache-ის ვებ-სერვერი.<br />
+იმისათვის რომ იპოვოთ თქვენი სერვერის IP Address საჭიროა გაუშვათ შემდეგი ბრძანება ტერმინალში:<br />
+<code>ifconfig | perl -nle'&#47;dr:(S+)&#47; &amp;&amp; print $1'<&#47;code><br />
+ხოლო IP Address-ის დაფიქსირების შემდეგ, თქვენ შეგიძლიათ დააკოპიროთ იგი ვებ-ბრაუზერში რათა გატესტოთ სერვერი.</p>
+<p><strong style="text-decoration: underline;">მეორე ნაბიჯი - MySQL-ს ინსტალაცია:<&#47;strong><br />
+<code>sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql<&#47;code><br />
+ეს ნაბიჯი წინასთან შედარებით ოდნავ განსხვავდება რადგან MySQL-ის სერვერზე დაყენებისას იგი გთხოვთ რომ შეიყვანოთ პაროლი root მომხამრებლისთვის, იმედია არ დაპანიკდებით და პაროლის ძიებას არ დაიწყებთ.<br />
+დიახ იგი გთხოვთ პაროლს ოღონდ ახალ პაროლს და არა რაიმე განსაკუთრებულს, მოკლედ გემოვნებიდან გამომდინარე აირჩიეთ თქვენი პაროლი და ესეც ასე...</p>
+<p><strong style="text-decoration: underline;">მესამე ნაბიჯი - PHP-ს ინსტალაცია:<&#47;strong><br />
+<code>sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt<&#47;code><br />
+ესეც ჩვენი ვებ-სკრიპტინგის პროგრამული ენა...</p>
+<p>ძალიან განვრცობადი საკითხია და სასაუბრო ნამდვილად არ გამომელევა ამ თემასთან დაკავშირებით, მოკლედ ეს არის ის მცირედი რაც მინდა რომ გადმოგცეთ ამ პატარა სტატიაში.</p>
