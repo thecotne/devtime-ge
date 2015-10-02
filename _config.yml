@@ -2,12 +2,13 @@
 title: DEVTIME
 # email: your-email@domain.com
 description: დეველოპერების დროა!
-baseurl: "/devtime-ge" # the subpath of your site, e.g. /blog/
+baseurl: "/devtime-ge"
 # url: "http://thecotne.github.io/" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
 # Build settings
-# markdown: kramdown
 
+# markdown: kramdown
 markdown: redcarpet
+paginate: 5
