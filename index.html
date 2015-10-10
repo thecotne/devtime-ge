@@ -2,30 +2,32 @@
 layout: default
 ---
 <div class="home">
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-    {% else %}
-      <span class="previous">Previous</span>
-    {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% else %}
-      <span class="next ">Next</span>
-    {% endif %}
-  </div>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<ul class="post-list">
+		{% for post in paginator.posts %}
+			<li>
+				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+				<h2>
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				</h2>
+			</li>
+		{% endfor %}
+	</ul>
+	<p class="pagination">
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path }}" class="previous">← იქით</a>
+		{% else %}
+			<span class="previous">← იქით</span>
+		{% endif %}
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path }}" class="next">აქეთ →</a>
+		{% else %}
+			<span class="next ">აქეთ →</span>
+		{% endif %}
+	</p>
+	<p class="page_number ">
+		გვერდი: {{ paginator.page }}/{{ paginator.total_pages }}
+	</p>
+	<p class="rss-subscribe">
+		გამოიწერეთ <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+	</p>
 </div>
