@@ -15,7 +15,7 @@ layout: default
 	</article>
 	<div
 		class="fb-like"
-		data-href="{{ site.url }}{{ page.url }}"
+		data-href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"
 		data-layout="standard"
 		data-action="like"
 		data-show-faces="true"
@@ -23,7 +23,7 @@ layout: default
 	<hr/>
 	<div
 		class="fb-comments"
-		data-href="{{ site.url }}{{ page.url }}"
+		data-href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"
 		data-numposts="5"
 		data-width="100%"></div>
 </div>
