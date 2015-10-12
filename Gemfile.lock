@@ -127,6 +127,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-feed
   jekyll-sitemap
 
 BUNDLED WITH
