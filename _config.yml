@@ -1,21 +1,10 @@
-# Site settings
 title: DEVTIME
-# email: your-email@domain.com
 description: დეველოპერების დროა!
 baseurl: ""
-url: "https://devtime.ge" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  jekyll
-
-# Build settings
-
-# markdown: kramdown
+url: "https://devtime.ge"
 markdown: redcarpet
 redcarpet:
   extensions: [with_toc_data]
-
 paginate: 5
-
 gems:
   - jekyll-sitemap
-
