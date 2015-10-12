@@ -80,3 +80,8 @@ $on-laptop:        800px;
 .pagination {
 	font-size: 24px;
 }
+
+.anchorjs-link {
+	text-decoration: none !important;
+	transition: all .1s linear;
+}

@@ -26,5 +26,11 @@
 	</div>
 
 	{% include footer.html %}
+	<script src="{{ "/bower_components/anchor-js/anchor.min.js" | prepend: site.baseurl }}"></script>
+	<script>
+	anchors.options = {
+		placement: 'left'
+	};
+	anchors.add('.post-content [id]')</script>
 </body>
 </html>
