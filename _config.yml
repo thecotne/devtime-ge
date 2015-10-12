@@ -12,3 +12,4 @@ paginate: 5
 gems:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-redirect-from
