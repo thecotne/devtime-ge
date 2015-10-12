@@ -23,7 +23,7 @@
 {% if page.image %}
 	<meta property="og:image" content="{{ page.image | '/img/posts/' | prepend: site.baseurl | prepend: site.url }}">
 {% else %}
-	<meta property="og:image" content="{{ '/img/devtme.png' | prepend: site.baseurl | prepend: site.url }}">
+	<meta property="og:image" content="{{ site.fb.default_image | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
 
 <meta property="og:image:type" content="image/png">
@@ -41,4 +41,4 @@
 	{% endfor %}
 {% endif %}
 
-<meta property="fb:app_id" content="879622035404501">
+<meta property="fb:app_id" content="{{ site.fb.app_id }}">

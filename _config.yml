@@ -2,6 +2,9 @@ title: DEVTIME
 description: დეველოპერების დროა!
 baseurl: ""
 url: "https://devtime.ge"
+fb:
+  app_id: "879622035404501"
+  default_image: "/img/devtme.png"
 markdown: redcarpet
 redcarpet:
   extensions: [with_toc_data]
