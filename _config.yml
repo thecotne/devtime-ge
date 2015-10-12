@@ -3,7 +3,7 @@ title: DEVTIME
 # email: your-email@domain.com
 description: დეველოპერების დროა!
 baseurl: ""
-url: "http://devtime.ge" # the base hostname & protocol for your site
+url: "https://devtime.ge" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
