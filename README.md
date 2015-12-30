@@ -9,7 +9,11 @@
 
 > სხვათაშორის windows-ზე არ მუშაობს Jekyll :trollface:
 
-უფრო სწორედ ოფიციალურად არ აქვს windows ის მხარდაჭერა მაგრამ შეიძლება ამუშავება
+უფრო სწორედ ოფიციალურად არ აქვს windows ის მხარდაჭერა მაგრამ შეიძლება ამუშავება:
+1. დავაყენოთ python 2.2.4
+2. დავაყენოთ [devkit](http://rubyinstaller.org/add-ons/devkit/)
+3. განვაახლოთ ყველა ბიბლიოთეკა.
+4. batch serve-ის მაგივრად ლოკალური ვერსიისთვის გავუშვათ run.cmd. საიტი გაეშვება : localhost:4000
 
 [Jekyll on Windows](http://jekyllrb.com/docs/windows)
 

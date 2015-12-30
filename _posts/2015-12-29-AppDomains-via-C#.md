@@ -12,16 +12,16 @@ date: 2015-12-29 00:37:00
 თანამედროვე ოპერაციულ სისტემაში ნებისმიერი პროგრამა ეშვება პროცესში.
 პროცესი ეწოდება გაშვებულ პროგრამას, მის მიერ გახსნილ ფაილებს, ნაკადებს და ა.შ.
 
-ყველა პროცესს აქვს თავისი მისამართების სივრცე (<a href='https://en.wikipedia.org/wiki/Address_space'> address space</a>),
+ყველა პროცესს აქვს თავისი მისამართების სივრცე ([address space](https://en.wikipedia.org/wiki/Address_space)),
 რომლის ზომაც 32 ბიტიან ოპერაციულ სისტემაში არის 4გბ, ხოლო 64 ბიტიან სისტემაში - 16გბ.
 
 რადგანც ყველა პროცესს თავისი მისამართების სივრცე აქვს,
 მათ არ შეუძლიათ პირდაპირ მიმართონ ერთმანეთის მეხსიერებას
 (რადგან ძირითადად ყველა პროგრამა ეშვება
-<a href='https://en.wikibooks.org/wiki/Windows_Programming/User_Mode_vs_Kernel_Mode'> user mode</a>-ში).
+ [user mode](https://en.wikibooks.org/wiki/Windows_Programming/User_Mode_vs_Kernel_Mode)-ში).
  მაგრამ ამავე დროს მათ ხშირად
  სჭირდებათ ინფორმაციის გაცვლა. ამისათვის გამოიყენება შემდეგი პროცესთა შორი კომუნიკაციის
-  (<a href='https://en.wikipedia.org/wiki/Inter-process_communication'> IPC </a>)
+  ([IPC](https://en.wikipedia.org/wiki/Inter-process_communication))
   ტექნოლოგიები :
 
   1. Socket
@@ -51,7 +51,7 @@ date: 2015-12-29 00:37:00
 
   ქვემოთ მოცემულ სურათზე წარმოდგენილია ვინდოსის პროცესი და 2 AppDomain
 
-  <img src='http://i.imgur.com/epRl3Mj.png'>
+  ![IMG](http://i.imgur.com/epRl3Mj.png)
 
   AppDomain - ებს შორის ინფორმაციის გაცვლისთვის გამოიყენება ტექნოლოგია - .Net Remoting.
   მოცემული ტექნოლოგია არის გაცილებით სწრაფი ვიდრე IPC, რადგან ყველაფერი ხდება პროცესის შიგნით,
