@@ -9,7 +9,13 @@
 
 > სხვათაშორის windows-ზე არ მუშაობს Jekyll :trollface:
 
-უფრო სწორედ ოფიციალურად არ აქვს windows ის მხარდაჭერა მაგრამ შეიძლება ამუშავება
+უფრო სწორედ ოფიციალურად არ აქვს windows ის მხარდაჭერა მაგრამ შეიძლება ამუშავება:
+- დავაყენოთ [ruby 2.2.3](http://rubyinstaller.org/)
+- დავაყენოთ bundler (`gem install bundler`)
+- დავაყენოთ [python 2.7](https://www.python.org/)
+- დავაყენოთ [devkit](http://rubyinstaller.org/add-ons/devkit/)
+- დავაყენოთ დამოკიდებულებები (`bundle install`)
+- ჩავრთოთ ლოკალური ვერსია (`run`)
 
 [Jekyll on Windows](http://jekyllrb.com/docs/windows)
 
