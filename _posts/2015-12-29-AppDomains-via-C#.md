@@ -24,12 +24,12 @@ date: 2015-12-29 00:37:00
 ([IPC](https://en.wikipedia.org/wiki/Inter-process_communication))
 ტექნოლოგიები :
 
-  1. Socket
-  2. Pipe
-  3. LPC (Local Procedure Call)
-  4. RPC (Remote Procedure Call)
-  5. DDE (Dynamic Data Exchange)
-  6. COM (Component Object Model)
+1. Socket
+2. Pipe
+3. LPC (Local Procedure Call)
+4. RPC (Remote Procedure Call)
+5. DDE (Dynamic Data Exchange)
+6. COM (Component Object Model)
 
 და ბევრი სხვა ტექნოლოგია.
 
@@ -75,8 +75,7 @@ AppDomain, რის შედეგადაც წაიშლება მა
 
 ახლა განვიხილოთ მარტივი მაგალითი
 
-```c#
-
+```csharp
 using System;
 using System.Runtime.Remoting;
 
@@ -130,7 +129,6 @@ namespace Domains
 		}
 	}
 }
-
 ```
 როგორც ვხედავთ AppDomain-ის შექმნა ხდება AppDomain კლასსზე სტატიკური მეთოდის CreateDomain - ის
 გამოძახებით. შემდეგ ხაზზე ვქმნით PersonTool კლასის ობიექტს ჩვენს მიერ შექმნილ AppDomain-ში. მეთოდი
@@ -157,7 +155,7 @@ User კლასის ობიექტს. როგორც ვხედ�
 AppDomain - ის წაშლა ხდება სტატიკური მეთოდით AppDomain.Unload.
 მაგალითი :
 
-```c#
+```csharp
 using System;
 
 namespace Domains
@@ -192,37 +190,37 @@ namespace Domains
 ახლა განვიხილოთ შემდეგი მაგალითი. visual studio-ში შევმნაქთ ახალი solution, შევქმნათ 3 პროექტი.
 პირველში ჩავწეროთ მხოლოდ შემდეგ კოდი:
 
-```c#
+```csharp
 namespace App1
 {
 public static class Program
-{
-	public static void Main()
 	{
-		System.Console.WriteLine("project 1  ", AppDomain.CurrentDomain.FriendlyName);
+		public static void Main()
+		{
+			System.Console.WriteLine("project 1  ", AppDomain.CurrentDomain.FriendlyName);
+		}
 	}
-}
 }
 ```
 
 მეორეში ჩავწეროთ :
 
-```c#
+```csharp
 namespace App2
 {
- public static class Program
- {
-	 public static void Main()
-	 {
-		 System.Console.WriteLine("project 2  ", AppDomain.CurrentDomain.FriendlyName);
-	 }
- }
+	public static class Program
+	{
+		public static void Main()
+		{
+			System.Console.WriteLine("project 2  ", AppDomain.CurrentDomain.FriendlyName);
+		}
+	}
 }
 ```
 
 მესამეში კი :
 
-```c#
+```csharp
 namespace MultyDomainApp
 {
 	static class Program
