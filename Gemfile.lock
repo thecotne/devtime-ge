@@ -135,6 +135,7 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-sitemap
   jemoji
+  rb-inotify
 
 BUNDLED WITH
    1.11.2
