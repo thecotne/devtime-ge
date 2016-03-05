@@ -5,12 +5,17 @@ url: "https://devtime.ge"
 fb:
   app_id: "879622035404501"
   default_image: "/img/devtme.png"
-markdown: redcarpet
-redcarpet:
-  extensions: [with_toc_data]
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  auto_ids: false
+
 paginate: 5
 gems:
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-sitemap
   - jemoji
