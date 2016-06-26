@@ -5,7 +5,7 @@
 - უნდა გვქონდეს ruby-2.x.x (`dnf install ruby ruby-devel rubygems`)
 - დავაყენოთ bundler (`gem install bundler`)
 - დავაყენოთ დამოკიდებულებები (`bundle install`)
-- ჩავრთოთ ლოკალური ვერსია (`bash serv`)
+- ჩავრთოთ ლოკალური ვერსია (`jekyll serve`)
 
 > სხვათაშორის windows-ზე არ მუშაობს Jekyll :trollface:
 
@@ -15,7 +15,7 @@
 - დავაყენოთ [python 2.7](https://www.python.org/)
 - დავაყენოთ [devkit](http://rubyinstaller.org/add-ons/devkit/)
 - დავაყენოთ დამოკიდებულებები (`bundle install`)
-- ჩავრთოთ ლოკალური ვერსია (`run`)
+- ჩავრთოთ ლოკალური ვერსია (`jekyll serve`)
 
 [Jekyll on Windows](http://jekyllrb.com/docs/windows)
 
