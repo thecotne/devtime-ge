@@ -4,7 +4,7 @@ baseurl: ""
 url: "https://devtime.ge"
 fb:
   app_id: "879622035404501"
-  default_image: "/img/devtme.png"
+  default_image: "/img/devtime.png"
 markdown: kramdown
 kramdown:
   input: GFM
