@@ -4,73 +4,73 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'norwester';
-    src: url('../fonts/norwester.eot');
-    src: url('../fonts/norwester.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/norwester.woff') format('woff'),
-         url('../fonts/norwester.ttf') format('truetype'),
-         url('../fonts/norwester.svg#norwesterregular') format('svg');
+  font-family: 'norwester';
+  src: url('../fonts/norwester.eot');
+  src: url('../fonts/norwester.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/norwester.woff') format('woff'),
+    url('../fonts/norwester.ttf') format('truetype'),
+    url('../fonts/norwester.svg#norwesterregular') format('svg');
 }
 
 @import "../bower_components/bpg-arial/css/bpg-arial.min.css";
 
 // Our variables
 $base-font-family: 'BPG Arial', norwester, Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-size: 16px;
+$small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #111;
+$text-color: #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color: #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width: 800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm: 600px;
+$on-laptop: 800px;
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 @import
-    "base",
-    "layout",
-    "syntax-highlighting"
+  "base",
+  "layout",
+  "syntax-highlighting"
 ;
 
 .masthead {
-	background: #303538;
-	color: #fff;
-	text-align: center;
+  background: #303538;
+  color: #fff;
+  text-align: center;
 }
 .masthead-title {
-	font-size: 4rem;
-	line-height: 1.5em;
+  font-size: 4rem;
+  line-height: 1.5em;
 }
 .masthead-title a {
-	color: #fff;
-	font-family: "norwester";
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	display: inline;
-	text-decoration: none;
+  color: #fff;
+  font-family: "norwester";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline;
+  text-decoration: none;
 }
 
 .pagination {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 .anchorjs-link {
-	text-decoration: none !important;
-	transition: all 100ms linear;
+  text-decoration: none !important;
+  transition: all 100ms linear;
 }

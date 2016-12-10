@@ -2,36 +2,36 @@
 layout: default
 ---
 <div class="home">
-	<ul class="post-list">
-		{% for post in paginator.posts %}
-			<li>
-				<span class="post-meta">
-					{{ post.date | date: "%b %-d, %Y" }}
-					{% if post.author %} • {{ post.author }}{% endif %}
-					{% if post.meta %} • {{ post.meta }}{% endif %}
-				</span>
-				<h2>
-					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				</h2>
-			</li>
-		{% endfor %}
-	</ul>
-	<p class="pagination">
-		{% if paginator.previous_page %}
-			<a href="{{ paginator.previous_page_path }}" class="previous">← იქით</a>
-		{% else %}
-			<span class="previous">← იქით</span>
-		{% endif %}
-		{% if paginator.next_page %}
-			<a href="{{ paginator.next_page_path }}" class="next">აქეთ →</a>
-		{% else %}
-			<span class="next ">აქეთ →</span>
-		{% endif %}
-	</p>
-	<p class="page_number ">
-		გვერდი: {{ paginator.page }}/{{ paginator.total_pages }}
-	</p>
-	<p class="rss-subscribe">
-		გამოიწერეთ <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
-	</p>
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="post-meta">
+          {{ post.date | date: "%b %-d, %Y" }}
+          {% if post.author %} • {{ post.author }}{% endif %}
+          {% if post.meta %} • {{ post.meta }}{% endif %}
+        </span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">← იქით</a>
+    {% else %}
+      <span class="previous">← იქით</span>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">აქეთ →</a>
+    {% else %}
+      <span class="next ">აქეთ →</span>
+    {% endif %}
+  </p>
+  <p class="page_number ">
+    გვერდი: {{ paginator.page }}/{{ paginator.total_pages }}
+  </p>
+  <p class="rss-subscribe">
+    გამოიწერეთ <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+  </p>
 </div>
