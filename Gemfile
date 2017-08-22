@@ -5,3 +5,4 @@ gem 'jekyll-redirect-from'
 gem 'jekyll-sitemap'
 gem 'jemoji'
 gem 'rb-inotify'
+gem 'jekyll-compose', group: [:jekyll_plugins]

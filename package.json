@@ -1,0 +1,11 @@
+{
+  "name": "devtime-ge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/thecotne/devtime-ge",
+  "author": "devtime-ge",
+  "license": "MIT",
+  "devDependencies": {
+    "@thecotne/tasker": "^1.1.6"
+  }
+}
