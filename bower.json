@@ -1,23 +1,8 @@
 {
+  "private": true,
   "name": "devtime-ge",
-  "version": "0.0.0",
-  "homepage": "https://github.com/thecotne/devtime-ge",
-  "authors": [
-    "cotne nazarashvili <cotne.95@gmail.com>"
-  ],
-  "description": "",
-  "main": "",
-  "moduleType": [],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
-    "bpg-arial": "^1.0.0",
-    "anchor-js": "^3.1.0"
+    "anchor-js": "3.2.2",
+    "bpg-arial": "^1.0.0"
   }
 }

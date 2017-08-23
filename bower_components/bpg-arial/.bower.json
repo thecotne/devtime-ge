@@ -41,7 +41,8 @@
     "tag": "1.0.0",
     "commit": "be8903a83533aa4265035e3215710a17768db0ff"
   },
-  "_source": "git://github.com/web-fonts/bpg-arial.git",
+  "_source": "https://github.com/web-fonts/bpg-arial.git",
   "_target": "^1.0.0",
-  "_originalSource": "bpg-arial"
+  "_originalSource": "bpg-arial",
+  "_direct": true
 }
