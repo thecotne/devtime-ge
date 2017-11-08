@@ -10,10 +10,10 @@
 > Windows-ზე ოფიციალურად არ აქვს მხარდაჭერა Jekyll-ს, მაგრამ გაშვება შესაძლებელია :trollface:
 
 უფრო სწორედ ოფიციალურად არ აქვს windows ის მხარდაჭერა მაგრამ შეიძლება ამუშავება:
-- დავაყენოთ [ruby 2.2.3](http://rubyinstaller.org/)
+- დავაყენოთ [ruby 2.4.2](http://rubyinstaller.org/)
 - დავაყენოთ bundler (`gem install bundler`)
 - დავაყენოთ [python 2.7](https://www.python.org/)
-- დავაყენოთ [devkit](http://rubyinstaller.org/add-ons/devkit/)
+- დავაყენოთ [MSYS2](http://http://www.msys2.org/)
 - დავაყენოთ დამოკიდებულებები (`bundle install`)
 - ჩავრთოთ ლოკალური ვერსია (`jekyll serve`)
 
