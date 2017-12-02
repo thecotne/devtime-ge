@@ -6,3 +6,4 @@ gem 'jekyll-sitemap'
 gem 'jemoji'
 gem 'rb-inotify'
 gem 'jekyll-compose', group: [:jekyll_plugins]
+gem 'jekyll-admin', group: :jekyll_plugins

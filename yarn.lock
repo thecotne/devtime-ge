@@ -2,6 +2,6 @@
 # yarn lockfile v1
 
 
-"@thecotne/tasker@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@thecotne/tasker/-/tasker-1.1.6.tgz#80a6cceb7917f76f80cb86a0559c940c811471be"
+"@thecotne/tasker@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@thecotne/tasker/-/tasker-1.2.1.tgz#b9d6eb8cea7100c568672a8049d4444f0a78055b"

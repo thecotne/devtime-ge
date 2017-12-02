@@ -1,6 +1,6 @@
 {
   "private": true,
   "devDependencies": {
-    "@thecotne/tasker": "^1.1.6"
+    "@thecotne/tasker": "^1.2.1"
   }
 }

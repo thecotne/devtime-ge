@@ -14,7 +14,7 @@ kramdown:
   auto_ids: false
 
 paginate: 5
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-redirect-from
