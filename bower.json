@@ -1,8 +1,0 @@
-{
-  "private": true,
-  "name": "devtime-ge",
-  "dependencies": {
-    "anchor-js": "3.2.2",
-    "bpg-arial": "^1.0.0"
-  }
-}

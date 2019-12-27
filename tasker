@@ -8,24 +8,29 @@ fi
 source ./node_modules/@thecotne/tasker/tasker-core
 
 function install { # Install All Dependencies
-    gem install jekyll bundler
-    bundle install
-    yarn
+  gem install jekyll bundler
+  bundle install
+  yarn
 }
 
 function update { # Update dependencies
-    yarn upgrade-interactive
+  yarn upgrade-interactive
 }
 
 function start { # Start Development Server
-    bundle exec jekyll serve
+  bundle exec jekyll serve
+}
+
+function update-assets { # Update Assets
+  rsync -va node_modules/bpg-arial assets/
+  rsync -va node_modules/anchor-js assets/
 }
 
 function add-post { # Create new post
-    printf "Post title: "
-    read title
-    bundle exec jekyll post $title
-    echo "Post URL: "http://127.0.0.1:4000/`date +%Y/%m/%d/`$title.html
+  printf "Post title: "
+  read title
+  bundle exec jekyll post $title
+  echo "Post URL: "http://127.0.0.1:4000/`date +%Y/%m/%d/`$title.html
 }
 
 _bootstrap "${@}"

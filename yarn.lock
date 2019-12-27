@@ -2,6 +2,17 @@
 # yarn lockfile v1
 
 
-"@thecotne/tasker@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@thecotne/tasker/-/tasker-1.2.1.tgz#b9d6eb8cea7100c568672a8049d4444f0a78055b"
+"@thecotne/tasker@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@thecotne/tasker/-/tasker-1.3.1.tgz#be7874cae5f64af054088492d70d2017a5375d8f"
+  integrity sha512-tU9m25Q/F4KzvSY6pZmXKzyUSl3Fmnwthft4QrY/CTFU2rVWO5olbhavz04EAZJFv8DjkBEUWECUT96ckg/mrA==
+
+anchor-js@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/anchor-js/-/anchor-js-4.2.2.tgz#e4edd682752cb2afaecdbc03df5c7b31e3c02922"
+  integrity sha512-Rg1tGaG4K3avYqDh7rOYCE/odWxpUiHStnlKL/bGOt9cl6NjR06zhPGVQcCAjE5PT48oQeHVgqNmLzxh0Kuk4A==
+
+bpg-arial@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/bpg-arial/-/bpg-arial-1.0.0.tgz#57584ed58aad4a4486978c01bf31cad5119635e6"
+  integrity sha1-V1hO1YqtSkSGl4wBvzHK1RGWNeY=

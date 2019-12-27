@@ -1,0 +1,48 @@
+{
+  "name": "anchor-js",
+  "version": "4.2.2",
+  "main": "anchor.js",
+  "author": "Bryan Braun (https://github.com/bryanbraun)",
+  "description": "A JavaScript utility for adding deep anchor links to online docs.",
+  "license": "MIT",
+  "homepage": "https://www.bryanbraun.com/anchorjs/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanbraun/anchorjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bryanbraun/anchorjs/issues"
+  },
+  "keywords": [
+    "anchor",
+    "links",
+    "urlify"
+  ],
+  "files": [
+    "anchor.js",
+    "anchor.min.js"
+  ],
+  "scripts": {
+    "add-banner": "node banner.js",
+    "copy-dist": "shx cp anchor.js docs/anchor.js",
+    "jasmine": "karma start test/config.js --single-run",
+    "lint": "eslint .",
+    "lockfile-lint": "lockfile-lint --allowed-hosts npm --validate-https --type npm --path package-lock.json",
+    "release": "npm-run-all uglify add-banner copy-dist",
+    "uglify": "uglifyjs anchor.js --compress --mangle --comments \"/Copyright/\" -o anchor.min.js",
+    "test": "npm-run-all --parallel lint lockfile-lint --serial jasmine"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "jasmine-core": "^3.5.0",
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-cli": "^2.0.0",
+    "karma-jasmine": "^2.0.1",
+    "lockfile-lint": "^2.2.0",
+    "npm-run-all": "^4.1.5",
+    "shx": "^0.3.2",
+    "uglify-js": "^3.6.9"
+  }
+}
